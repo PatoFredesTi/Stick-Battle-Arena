@@ -1,0 +1,10 @@
+.godot/
+.import/
+*.import
+exports/
+builds/
+*.exe
+*.zip
+.DS_Store
+Thumbs.db
+.vscode/
