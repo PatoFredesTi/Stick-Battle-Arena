@@ -1,55 +1,91 @@
-# Anime Stick Battle Arena — v0.1
+# Anime Stick Battle Arena — v0.5 Fixed
 
-Primera versión jugable/prototipo del proyecto.
+Fast-paced 2D anime-inspired stickman battle prototype built with Godot Engine 4 and GDScript.
 
-## Incluye
+## v0.5 Fixed Features
 
-- Personaje stickman básico.
-- Movimiento izquierda/derecha.
-- Salto.
-- Doble espacio para activar/desactivar vuelo.
-- Vuelo con consumo de energía.
-- Caída automática al quedarse sin energía.
-- Carga de energía manteniendo `C`.
-- HUD con vida, energía y estado.
-- Cámara que sigue al jugador.
-- Soporte inicial para control.
+- Two local players.
+- Ground movement, jumping and aerial flight.
+- Energy management.
+- Manual energy charging.
+- Basic melee combat.
+- Light and heavy attacks.
+- Knockback and short stun.
+- Basic blocking.
+- Energy Ball attack.
+- Energy Barrage attack.
+- Homing Energy attack.
+- Energy cost per special attack.
+- HUD with life and energy bars for both players.
 
-## Controles teclado
+- Dash system.
+- Ground dash.
+- Aerial dash.
+- Dash energy cost and cooldown.
+- Dash afterimages.
+- Aura Boost / T Mode.
+- +50% movement speed while aura is active.
+- +50% melee damage while aura is active.
+- +50% energy attack power while aura is active.
+- Continuous energy drain while aura is active.
+- Aura visual effects.
+- Fixed runaway knockback after melee hits and energy attacks.
+- Added stun knockback friction.
+- Added movement friction when there is no input.
+- Added horizontal arena limits.
+- Reduced projectile knockback to keep combat readable.
+- Speed lines.
+- Improved combat flow.
+- Dynamic camera.
+- Camera shake on impacts and special moments.
 
-| Acción | Tecla |
+## Player 1 Controls
+
+| Action | Key |
 |---|---|
-| Mover | A / D |
-| Saltar | Espacio |
-| Activar vuelo | Espacio + Espacio |
-| Cargar energía | C |
+| Move | A / D |
+| Jump / Fly toggle | Space |
+| Down while flying | S |
+| Aura Boost | T |
+| Dash | Shift |
+| Charge energy | C |
+| Block | Q |
+| Light attack | J |
+| Heavy attack | K |
+| Energy Ball | L |
+| Energy Barrage | I |
+| Homing Energy | O |
 
-## Controles control
+## Player 2 Controls
 
-| Acción | Botón |
+| Action | Key |
 |---|---|
-| Mover | Stick izquierdo |
-| Saltar / vuelo | A |
-| Cargar energía | LB |
+| Move | Left / Right arrows |
+| Jump / Fly toggle | Up arrow |
+| Down while flying | Down arrow |
+| Aura Boost | 6 |
+| Dash | Ctrl |
+| Charge energy | Page Up |
+| Block | Page Down |
+| Light attack | 1 |
+| Heavy attack | 2 |
+| Energy Ball | 3 |
+| Energy Barrage | 4 |
+| Homing Energy | 5 |
 
-## Cómo abrir
+## How to run
 
-1. Instala Godot 4.x.
-2. Abre Godot.
-3. Selecciona "Import".
-4. Elige el archivo `project.godot`.
-5. Ejecuta el proyecto.
+1. Open Godot 4.x.
+2. Import `project.godot`.
+3. Open `scenes/Main.tscn`.
+4. Press F6 or F5.
 
-## Objetivo de esta versión
+## Tech Stack
 
-Validar el primer pilar del juego: que el personaje pueda moverse, saltar, volar y gestionar energía de forma clara.
+- Godot Engine 4
+- GDScript
+- Git + GitHub
 
-## Próxima versión sugerida: v0.2
+## Notes
 
-- Segundo jugador local.
-- Golpe rápido.
-- Golpe fuerte.
-- Hitbox/hurtbox básica.
-- Knockback.
-- Daño físico.
-- Shake al impactar.
+The `.godot/` folder is intentionally ignored and should not be committed to GitHub.
